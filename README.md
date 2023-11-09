@@ -4,11 +4,13 @@ Create a Monte Carlo simulation study in R to investigate properties of estimato
 - Monte Carlo Simulation 
 - Estimators 
 - Confidence intervals
-- Parametric and Non-parametric Bootstraping
+- Parametric and Non-parametric Bootstrapping
+
+[Report for this project](proj1 v3.Rmd)
 
 Tuesday, September 27, 2022, 11:59 PM
 
-Chien-Lan Hsueh (chienlan.hsueh@gmail.com)
+Chien-Lan Hsueh (chienlan.hsueh at gmail.com)
 
 
 ## Overview and Project Goal
