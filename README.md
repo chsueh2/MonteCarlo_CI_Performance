@@ -6,18 +6,21 @@ Create a Monte Carlo simulation study in R to investigate properties of estimato
 - Confidence intervals
 - Parametric and Non-parametric Bootstrapping
 
+
+## Final Report
+
 Project report: [R Markdown](./proj1_v3.Rmd) [HTML](./proj1_v3.html)
 
-Tuesday, September 27, 2022, 11:59 PM
+Tuesday, September 27, 2022
 
 Chien-Lan Hsueh (chienlan.hsueh at gmail.com)
 
 
 ## Overview and Project Goal
-The project involves creating a Monte Carlo simulation study in R (generating data in R to investigate properties of estimators/CIs) and the creation of a report.
+The project involves creating a Monte Carlo simulation study in R (generating data in R to investigate properties of estimators and CIs) and the creation of a report.
 
 We’ll simulate data from different distributions and look at the performance of confidence intervals for capturing a parameter. Here: 1/(mean of the distribution).
-Specifically, we’ll consider obtain a random sample from an $\exp{(λ)}$ distribution and attempt to capture $1/E(Y) = \lambda$ and investigate the following performance aspects of our confidence intervals:
+Specifically, we’ll consider obtain a random sample from an $\exp{(\lambda)}$ distribution and attempt to capture $1/E(Y) = \lambda$ and investigate the following performance aspects of our confidence intervals:
 
 - coverage rate (the proportion of time they contain the true value)
 - proportion of intervals that miss by being below (all values less than the truth)
@@ -29,18 +32,18 @@ Specifically, we’ll consider obtain a random sample from an $\exp{(λ)}$ distr
 Assume that we have an iid sample from an $\exp{(\lambda)}$ population and we have an interest in creating
 confidence intervals for one divided by the mean of the distribution, here $\lambda$. We’ll compare six different methods for constructing a confidence interval:
 
-- The exact interval using the estimator $1/Y$
-- The large-sample normality based interval using the CLT and the Delta method on that same estimator
-- The raw percentile non-parametric bootstrap interval using that estimator
-- The raw percentile parametric bootstrap interval using that estimator
-- The reflected percentile non-parametric bootstrap interval using that estimator
-- The bootstrap t-interval using a non-parametric bootstrap using that estimator
+1. The exact interval using the estimator $1/Y$
+1. The large-sample normality based interval using the CLT and the Delta method on that same estimator
+1. The raw percentile non-parametric bootstrap interval using that estimator
+1. The raw percentile parametric bootstrap interval using that estimator
+1. The reflected percentile non-parametric bootstrap interval using that estimator
+1. The bootstrap t-interval using a non-parametric bootstrap using that estimator
 
 ## Part 2 - Data Simulation
-Compare the above intervals’ performance when truly sampling from an $\exp{(λ)}$ distribution
+Compare the above intervals’ performance when truly sampling from an $\exp{(\lambda)}$ distribution
 for sample sizes of $n =$ 10, 30, 100 and 500 and $\lambda$ values of 0.5, 1, and 5. (All combinations, so 12 total combinations.) Simulate at least 1000 samples for each combination.
 
 ## Part 3 - Performance Comparison
 Compare the above intervals’ performances when we are wrong about the data generating
-process (to see how robust our methods are to misspecification). That is, generate data from a $\gamma(2,  \lambda)$ distribution under the different $n$ and $\lambda$ specifications above. 
+process (to see how robust our methods are to misspecification). That is, generate data from a $\Gamma(2,  \lambda)$ distribution under the different $n$ and $\lambda$ specifications above. 
 In this case, you want to check if $1/E(Y) = \lambda/2$ is in the above intervals rather than $\lambda$ itself. 

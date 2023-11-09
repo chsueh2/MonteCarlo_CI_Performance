@@ -3,15 +3,15 @@ title: "Monte Carlo Simulation Study for Estimators and CI Performance"
 author: "Chien-Lan Hsueh"
 date: "`r Sys.Date()`"
 output:
+  pdf_document:
+    latex_engine: xelatex
+    highlight: haddock
+    df_print: tibble      
   html_document:
     theme: cerulean
     highlight: haddock
     code_folding: none
     df_print: paged  
-  pdf_document:
-    latex_engine: xelatex
-    highlight: haddock
-    df_print: tibble      
 ---
 
 ## Project Goal
@@ -313,7 +313,7 @@ print(proc.time() - proc_timer)
 plot_CIs(df_exact)
 
 # save results
-saveRDS(df_exact, "df_exact.rds")
+saveRDS(df_exact, here("all_results", "df_exact.rds"))
 ```
 
 ### Method 2: Large-sample Normality Based Interval
@@ -380,7 +380,7 @@ print(proc.time() - proc_timer)
 plot_CIs(df_delta)
 
 # save results
-saveRDS(df_delta, "df_delta.rds")
+saveRDS(df_delta, here("all_results", "df_delta.rds"))
 ```
 
 
@@ -431,7 +431,7 @@ print(proc.time() - proc_timer)
 plot_CIs(df_raw_np)
 
 # save results
-saveRDS(df_raw_np, "df_raw_np.rds")
+saveRDS(df_raw_np, here("all_results", "df_raw_np.rds"))
 ```
 
 ### Method 4: Raw Percentile Parametric Bootstrap Interval
@@ -485,7 +485,7 @@ print(proc.time() - proc_timer)
 plot_CIs(df_raw_par)
 
 # save results
-saveRDS(df_raw_par, "df_raw_par.rds")
+saveRDS(df_raw_par, here("all_results", "df_raw_par.rds"))
 ```
 
 ### Method 5: Reflected Percentile Parametric Bootstrap Interval
@@ -550,7 +550,7 @@ print(proc.time() - proc_timer)
 plot_CIs(df_reflected)
 
 # save results
-saveRDS(df_reflected, "df_reflected.rds")
+saveRDS(df_reflected, here("all_results", "df_reflected.rds"))
 ```
 
 ### Method 6 Bootstrapt Interval
@@ -640,7 +640,7 @@ print(proc.time() - proc_timer)
 plot_CIs(df_bootstrap_t)
 
 # save results
-saveRDS(df_bootstrap_t, "df_bootstrap_t.rds")
+saveRDS(df_bootstrap_t, here("all_results", "df_bootstrap_t.rds"))
 ```
 
 ## Comparison Summary 
@@ -649,15 +649,15 @@ Now we can combine all the results into one data frame for an easy comparison an
 
 ```{r summary, cache=TRUE}
 # # results folder
-# folder_rds <- here("method_3-4_CLH", "all_results")
+# folder_rds <- here("all_results")
 # 
 # # load results from each method
 # df_exact <- readRDS(here(folder_rds, "df_exact.rds"))
-# df_delta <- readRDS(here(folder_rds, "all_results", "df_delta.rds"))
-# df_raw_np <- readRDS(here(folder_rds, "all_results", "df_raw_np.rds"))
-# df_raw_par <- readRDS(here(folder_rds, "all_results", "df_raw_par.rds"))
-# df_reflected <- readRDS(here(folder_rds, "all_results", "df_reflected.rds"))
-# df_bootstrap_t <- readRDS(here(folder_rds, "all_results", "df_bootstrap_t.rds"))
+# df_delta <- readRDS(here(folder_rds, "df_delta.rds"))
+# df_raw_np <- readRDS(here(folder_rds, "df_raw_np.rds"))
+# df_raw_par <- readRDS(here(folder_rds, "df_raw_par.rds"))
+# df_reflected <- readRDS(here(folder_rds, "df_reflected.rds"))
+# df_bootstrap_t <- readRDS(here(folder_rds, "df_bootstrap_t.rds"))
 
 # combine all results
 df_all <- bind_rows(df_exact, df_delta, df_raw_np, df_raw_par, df_reflected, df_bootstrap_t) %>% 
