@@ -22,7 +22,7 @@ read_all <- function(path, shape){
   
   return(df)
 }
-
+ 
 
 df_1 <- read_all(here("method_3-4_CLH", "shape2"), 2) 
 df_2 <- read_all(here("method_3-4_CLH", "shape4"), 4)
