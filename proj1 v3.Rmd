@@ -643,7 +643,7 @@ plot_CIs(df_bootstrap_t)
 saveRDS(df_bootstrap_t, "df_bootstrap_t.rds")
 ```
 
-## Comparison Summary
+## Comparison Summary 
 
 Now we can combine all the results into one data frame for an easy comparison and summary.
 
