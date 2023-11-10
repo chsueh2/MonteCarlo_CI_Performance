@@ -8,7 +8,7 @@ Key features:
 - Large-sample normality based intervals using CLT and Delta method 
 - Parametric and Non-parametric Bootstrapping
 
-## Final Report
+## Project Report
 
 The analysis results with all theoretical backgrounds and math derivations are included in the [project report](./proj1_v3.md) ([R Markdown](./proj1_v3.Rmd)).
 
