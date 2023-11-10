@@ -3,15 +3,19 @@ title: "Monte Carlo Simulation Study for Estimators and CI Performance"
 author: "Chien-Lan Hsueh"
 date: "`r Sys.Date()`"
 output:
-  pdf_document:
-    latex_engine: xelatex
-    highlight: haddock
-    df_print: tibble      
+  github_document:
+    toc: true
+    df_print: paged
+    html_preview: false
   html_document:
     theme: cerulean
     highlight: haddock
     code_folding: none
-    df_print: paged  
+    df_print: paged
+  pdf_document:
+    latex_engine: xelatex
+    highlight: haddock
+    df_print: tibble      
 ---
 
 ## Project Goal
