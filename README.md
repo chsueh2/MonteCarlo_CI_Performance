@@ -9,7 +9,7 @@ Create a Monte Carlo simulation study in R to investigate properties of estimato
 
 ## Final Report
 
-[Project report](./proj1_v3.md): [R Markdown](./proj1_v3.Rmd) [HTML](./proj1_v3.html)
+[Project report](./proj1_v3.md): [R Markdown](./proj1_v3.Rmd)
 
 Tuesday, September 27, 2022
 

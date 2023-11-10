@@ -408,9 +408,9 @@ Y = g(X) &\overset{\bullet}{\sim}N\Big(g(\mu), \left.[g'(\mu)\right]^2\sigma^2\B
 \end{aligned}
 $$
 
-For our estimator $\hat{\Lambda} = \frac{1}{\bar{Y}$, $E[Y_i]=1/\lambda$
-and $Var(Y_i)=1/\lambda^2$, we can use this to approximate its
-distribution:
+For our estimator $\hat{\Lambda} = \frac{1}{\bar{Y}}$,
+$E[Y_i]=1/\lambda$ and $Var(Y_i)=1/\lambda^2$, we can use this to
+approximate its distribution:
 
 $$
 \begin{aligned}
