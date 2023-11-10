@@ -1,13 +1,18 @@
+# Load and compare the simulation results by each method
+# Compare the pass rates in a summary table
 
 library(gt)
 library(gtExtras)
 library(tidyverse)
 library(here)
 
+# set confidence level
 CL <- 0.95
+
+# methods to compare
 methods = c("Exact", "Delta_Normality", "Raw_Nonparametric", "Raw_Parametric", "Reflected", "Bootstrape_t")
 
-
+# helper function to read the simulation results
 read_all <- function(path, shape){
   f_files <- list.files(path, pattern = "^\\w.*\\.rds$")
   
@@ -22,13 +27,13 @@ read_all <- function(path, shape){
   
   return(df)
 }
- 
 
+# read simulation results 
 df_1 <- read_all(here("method_3-4_CLH", "shape2"), 2) 
 df_2 <- read_all(here("method_3-4_CLH", "shape4"), 4)
 df_3 <- read_all(here("method_3-4_CLH", "shape05"), 0.5)
 
-
+# combine the results 
 df_all <- bind_rows(df_1, df_2, df_3) %>% 
   mutate(
     method = fct_relevel(method, methods),
@@ -36,8 +41,7 @@ df_all <- bind_rows(df_1, df_2, df_3) %>%
   )
 
 
-
-# coverage_rate >= 0.975
+# filter for coverage_rate >= 0.975
 gt1 <- df_all %>% 
   mutate(
     QA = coverage_rate >= 0.975
@@ -58,7 +62,7 @@ gt1 <- df_all %>%
   cols_align("left")
 
 
-# coverage_rate >= CL
+# filter for coverage_rate >= CL
 gt2 <- df_all %>% 
   mutate(
     QA = coverage_rate >= CL
@@ -79,7 +83,7 @@ gt2 <- df_all %>%
   cols_align("left")
 
 
-# coverage_rate >= 0.90
+# filter for coverage_rate >= 0.90
 gt3 <- df_all %>% 
   mutate(
     QA = coverage_rate >= 0.9
@@ -99,8 +103,7 @@ gt3 <- df_all %>%
   ) %>% 
   cols_align("left")
 
-
-
+# comparison table
 gt_two_column_layout(list(gt1, gt2))
 gt3
 

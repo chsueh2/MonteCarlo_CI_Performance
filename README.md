@@ -7,6 +7,7 @@ Key features:
 - Estimators and Confidence Intervals
 - Large-sample normality based intervals using CLT and Delta method 
 - Parametric and Non-parametric Bootstrapping
+- R code benchmarks
 
 ## Project Report
 
