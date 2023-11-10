@@ -13,7 +13,7 @@ Key features:
 
 The analysis results with all theoretical backgrounds and math derivations are included in the [project report](./proj1_v3.md) ([R Markdown](./proj1_v3.Rmd)).
 
-Original Completion Date: Tuesday, September 27, 2022
+Original Completion Date: September 27, 2022
 
 Author: Chien-Lan Hsueh (chienlan.hsueh at gmail.com)
 

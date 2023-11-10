@@ -1,7 +1,7 @@
 Monte Carlo Simulation Study for Estimators and CI Performance
 ================
 Chien-Lan Hsueh
-2023-11-09
+2023-09-27
 
 - [Project Goal](#project-goal)
 - [Set up](#set-up)
