@@ -10,11 +10,11 @@ Key features:
 
 ## Final Report
 
-All theoretical backgrounds and derivations are included in the [Project report](./proj1_v3.md) ([R Markdown](./proj1_v3.Rmd)).
+The analysis results with all theoretical backgrounds and math derivations are included in the [project report](./proj1_v3.md) ([R Markdown](./proj1_v3.Rmd)).
 
 Original Completion Date: Tuesday, September 27, 2022
 
-Chien-Lan Hsueh (chienlan.hsueh at gmail.com)
+Author: Chien-Lan Hsueh (chienlan.hsueh at gmail.com)
 
 
 ## Overview and Project Goal
