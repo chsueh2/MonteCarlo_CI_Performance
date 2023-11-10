@@ -1,17 +1,18 @@
 # Monte Carlo Simulation Study for Estimators and CI Performance
 Create a Monte Carlo simulation study in R to investigate properties of estimators and confidence intervals (CIs).
 
-- Monte Carlo Simulation 
-- Estimators 
-- Confidence Intervals
-- Parametric and Non-parametric Bootstrapping
+Key features:
 
+- Monte Carlo Simulation 
+- Estimators and Confidence Intervals
+- Large-sample normality based intervals using CLT and Delta method 
+- Parametric and Non-parametric Bootstrapping
 
 ## Final Report
 
-[Project report](./proj1_v3.md): [R Markdown](./proj1_v3.Rmd)
+All theoretical backgrounds and derivations are included in the [Project report](./proj1_v3.md) ([R Markdown](./proj1_v3.Rmd)).
 
-Tuesday, September 27, 2022
+Original Completion Date: Tuesday, September 27, 2022
 
 Chien-Lan Hsueh (chienlan.hsueh at gmail.com)
 
