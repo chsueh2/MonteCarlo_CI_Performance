@@ -158,10 +158,12 @@ function.
 
 `rs(n = 1, rate = 1, dist = T)`:
 
-> Arguments: - `n`: number of random observations to generate - `rate`:
-> rate parameter ($\lambda$) used in `rexp(n, rate)` and
-> `rgamma(n, rate, shape = rate)` - `dist`: logical; if `TRUE`, use
-> `rexp()`
+> Arguments:
+>
+> - `n`: number of random observations to generate
+> - `rate`: rate parameter ($\lambda$) used in `rexp(n, rate)` and
+>   `rgamma(n, rate, shape = rate)`
+> - `dist`: logical; if `TRUE`, use `rexp()`
 >
 > Return Value: (vector) random samples of length $n$
 
@@ -175,10 +177,13 @@ function `pack_results()` to pack the result for return.
 
 `get_CIs(n, lambda, correct_dist, fun_CI)`:
 
-> Arguments: - `n`: sample size - `lambda`: rate parameter used in
-> `rexp(n, rate)` and `rgamma(n, rate, shape = rate)` - `correct_dist`:
-> logical; if `TRUE`, use `rexp()` - `fun_CI`: one of the core herlper
-> functions to get CI
+> Arguments:
+>
+> - `n`: sample size
+> - `lambda`: rate parameter used in `rexp(n, rate)` and
+>   `rgamma(n, rate, shape = rate)`
+> - `correct_dist`: logical; if `TRUE`, use `rexp()`
+> - `fun_CI`: one of the core herlper functions to get CI
 >
 > Return Value: (list) a data frame of $N$ confidence intervals and the
 > performance measures
@@ -192,9 +197,11 @@ the average of standard error of the length of intervals.
 
 `pack_results(df)`:
 
-> Arguments: - `df`: a data fram contains $N$ confidence intervals from
-> the simulations. The required columns include `CI`, `captured`,
-> `miss_by_being_low`, `miss_by_being_high` and `length`.
+> Arguments:
+>
+> - `df`: a data fram contains $N$ confidence intervals from the
+>   simulations. The required columns include `CI`, `captured`,
+>   `miss_by_being_low`, `miss_by_being_high` and `length`.
 >
 > Return Value: (list) of a data frame of $N$ confidence intervals and
 > the performance measures
@@ -219,9 +226,12 @@ format.
 
 `CI_*(n, lambda, correct_dist)`:
 
-> Arguments: - `n`: sample size - `lambda`: rate parameter used in
-> `rexp(n, rate)` and `rgamma(n, rate, shape = rate)` - `correct_dist`:
-> logical; if `TRUE`, use `rexp()`
+> Arguments:
+>
+> - `n`: sample size
+> - `lambda`: rate parameter used in `rexp(n, rate)` and
+>   `rgamma(n, rate, shape = rate)`
+> - `correct_dist`: logical; if `TRUE`, use `rexp()`
 >
 > Return Value: (named list) of one CI with `LB` and `UB` as lower and
 > upper bounds.
@@ -236,8 +246,10 @@ the CI lengths from all simulations.
 
 `plot_CIs(df)`:
 
-> Arguments: - `df`: a datframe with a list column named `df_CIs` that
-> store a data frame of CIs from simulations.
+> Arguments:
+>
+> - `df`: a datframe with a list column named `df_CIs` that store a data
+>   frame of CIs from simulations.
 
 ### Setup (Global Variables)
 

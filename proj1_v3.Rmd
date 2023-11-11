@@ -140,6 +140,7 @@ To make the code clear, we wrap the two random number generating functions from 
 `rs(n = 1, rate = 1, dist = T)`:
 
 > Arguments:
+>
 > - `n`: number of random observations to generate
 > - `rate`: rate parameter ($\lambda$) used in `rexp(n, rate)` and `rgamma(n, rate, shape = rate)`
 > - `dist`: logical; if `TRUE`, use `rexp()`
@@ -153,6 +154,7 @@ This helper function calls one of the core helper function that calculate confid
 `get_CIs(n, lambda, correct_dist, fun_CI)`:
 
 > Arguments:
+>
 > - `n`: sample size
 > - `lambda`: rate parameter used in `rexp(n, rate)` and `rgamma(n, rate, shape = rate)`
 > - `correct_dist`: logical; if `TRUE`, use `rexp()`
@@ -166,6 +168,7 @@ This helper function takes the simulated CIs (data frame) to calculate the inter
 `pack_results(df)`:
 
 > Arguments:
+>
 > - `df`: a data fram contains $N$ confidence intervals from the simulations. The required columns include `CI`, `captured`, `miss_by_being_low`, `miss_by_being_high` and `length`.
 >
 > Return Value: (list) of a data frame of $N$ confidence intervals and the performance measures
@@ -185,6 +188,7 @@ Each of them take the same set of arguments and return CI in the same format.
 `CI_*(n, lambda, correct_dist)`:
 
 > Arguments:
+>
 > - `n`: sample size
 > - `lambda`: rate parameter used in `rexp(n, rate)` and `rgamma(n, rate, shape = rate)`
 > - `correct_dist`: logical; if `TRUE`, use `rexp()`
@@ -200,7 +204,8 @@ Take the CIs saved in the list column `df_CIs` and create box plots of the CI le
 `plot_CIs(df)`:
 
 > Arguments:
-- `df`: a datframe with a list column named `df_CIs` that store a data frame of CIs from simulations.
+>
+> - `df`: a datframe with a list column named `df_CIs` that store a data frame of CIs from simulations.
 
 ### Setup (Global Variables)
 
