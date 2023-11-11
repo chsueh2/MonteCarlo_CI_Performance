@@ -1,11 +1,11 @@
 ---
 title: "Monte Carlo Simulation Study for Estimators and CI Performance"
 author: "Chien-Lan Hsueh"
-date: "`r Sys.Date()`"
+date: "2022-09-27"
 output:
   github_document:
     toc: true
-    df_print: paged
+    df_print: kable
     html_preview: false
   html_document:
     theme: cerulean
