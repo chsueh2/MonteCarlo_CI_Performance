@@ -10,14 +10,20 @@ Key features:
 - Parametric and Non-parametric Bootstrapping
 - R code benchmarks
 
+R packages used:
+
+- `here`: enables easy file referencing and builds file paths in a OS-independent way
+- `stats`: loads this before loading `tidyverse` to avoid masking some `tidyverse` functions
+- `tidyverse`: includes collections of useful packages like `dplyr` (data manipulation), `tidyr` (tidying data),  `ggplots` (creating graphs), etc.
+- `scales`: formats and labels scales nicely for better visualization
+
 ## Project Report
 
-The analysis results with all theoretical backgrounds and math derivations are included in the [project report](./proj1_v3.md) ([R Markdown](./proj1_v3.Rmd)).
+[Project report](https://rpubs.com/clh2021/1113711) ([Github Markdown](./proj1_v3.md))([R Markdown](./proj1_v3.Rmd))
 
-Original Completion Date: September 27, 2022
+The analysis results with all theoretical backgrounds and math derivations are included.
 
 Author: Chien-Lan Hsueh (chienlan.hsueh at gmail.com)
-
 
 ## Overview and Project Goal
 The project involves creating a Monte Carlo simulation study in R (generating data in R to investigate properties of estimators and CIs) and the creation of a report.

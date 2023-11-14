@@ -3,6 +3,11 @@ title: "Monte Carlo Simulation Study for Estimators and CI Performance"
 author: "Chien-Lan Hsueh"
 date: "2022-09-27"
 output:
+  rmdformats::robobook: 
+    theme: cerulean
+    highlight: haddock
+    code_folding: none
+    df_print: paged
   github_document:
     toc: true
     df_print: kable
