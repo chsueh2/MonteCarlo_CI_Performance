@@ -2,6 +2,8 @@
 
 Create a Monte Carlo simulation study in R to investigate properties of estimators and confidence intervals (CIs).
 
+[Project report](https://rpubs.com/clh2021/1113711)
+
 Key features:
 
 - Monte Carlo Simulation 
