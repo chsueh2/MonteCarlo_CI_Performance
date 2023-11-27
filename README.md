@@ -21,7 +21,7 @@ R packages used:
 
 ## Project Report
 
-[Project report](https://rpubs.com/clh2021/1113711) ([Github Markdown](./proj1_v3.md))([R Markdown](./proj1_v3.Rmd))
+[Project report](https://rpubs.com/clh2021/1113711) ([Github Markdown](./proj_v3.md))([R Markdown](./proj_v3.Rmd))
 
 The analysis results with all theoretical backgrounds and math derivations are included.
 
@@ -58,3 +58,9 @@ for sample sizes of $n =$ 10, 30, 100 and 500 and $\lambda$ values of 0.5, 1, an
 Compare the above intervals’ performances when we are wrong about the data generating
 process (to see how robust our methods are to misspecification). That is, generate data from a $\Gamma(2,  \lambda)$ distribution under the different $n$ and $\lambda$ specifications above. 
 In this case, you want to check if $1/E(Y) = \lambda/2$ is in the above intervals rather than $\lambda$ itself. 
+
+![](./images/image1.png)
+
+![](./images/image2.png)
+
+![](./images/image3.png)
