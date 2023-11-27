@@ -390,14 +390,14 @@ print(proc.time() - proc_timer)
 ```
 
     ##    user  system elapsed 
-    ##    1.47    0.05    1.55
+    ##    1.58    0.06    1.66
 
 ``` r
 # distribution of interval lengths from all simulations
 plot_CIs(df_exact)
 ```
 
-![](proj1_v3_files/figure-gfm/method_exact-1.png)<!-- -->
+![](proj_v3_files/figure-gfm/method_exact-1.png)<!-- -->
 
 ``` r
 # save results
@@ -490,14 +490,14 @@ print(proc.time() - proc_timer)
 ```
 
     ##    user  system elapsed 
-    ##    1.39    0.03    1.50
+    ##    1.28    0.02    1.36
 
 ``` r
 # distribution of interval lengths from all simulations
 plot_CIs(df_delta)
 ```
 
-![](proj1_v3_files/figure-gfm/methdo_delta-1.png)<!-- -->
+![](proj_v3_files/figure-gfm/methdo_delta-1.png)<!-- -->
 
 ``` r
 # save results
@@ -575,14 +575,14 @@ print(proc.time() - proc_timer)
 ```
 
     ##    user  system elapsed 
-    ##  194.67    6.70  223.04
+    ##  199.49    6.93  209.08
 
 ``` r
 # distribution of interval lengths from all simulations
 plot_CIs(df_raw_np)
 ```
 
-![](proj1_v3_files/figure-gfm/method_raw_np-1.png)<!-- -->
+![](proj_v3_files/figure-gfm/method_raw_np-1.png)<!-- -->
 
 ``` r
 # save results
@@ -662,14 +662,14 @@ print(proc.time() - proc_timer)
 ```
 
     ##    user  system elapsed 
-    ##  131.42    6.03  176.94
+    ##  147.72    6.53  156.18
 
 ``` r
 # distribution of interval lengths from all simulations
 plot_CIs(df_raw_par)
 ```
 
-![](proj1_v3_files/figure-gfm/method_raw_par-1.png)<!-- -->
+![](proj_v3_files/figure-gfm/method_raw_par-1.png)<!-- -->
 
 ``` r
 # save results
@@ -759,14 +759,14 @@ print(proc.time() - proc_timer)
 ```
 
     ##    user  system elapsed 
-    ##  198.13    6.94  214.50
+    ##  183.42    6.72  222.41
 
 ``` r
 # distribution of interval lengths from all simulations
 plot_CIs(df_reflected)
 ```
 
-![](proj1_v3_files/figure-gfm/method_reflected-1.png)<!-- -->
+![](proj_v3_files/figure-gfm/method_reflected-1.png)<!-- -->
 
 ``` r
 # save results
@@ -880,14 +880,14 @@ print(proc.time() - proc_timer)
 ```
 
     ##    user  system elapsed 
-    ##  195.99    6.78  206.25
+    ##  169.61    4.89  236.46
 
 ``` r
 # distribution of interval lengths from all simulations
 plot_CIs(df_bootstrap_t)
 ```
 
-![](proj1_v3_files/figure-gfm/method_bootstrap_t-1.png)<!-- -->
+![](proj_v3_files/figure-gfm/method_bootstrap_t-1.png)<!-- -->
 
 ``` r
 # save results
@@ -970,7 +970,7 @@ df %>%
   )
 ```
 
-![](proj1_v3_files/figure-gfm/unnamed-chunk-1-1.png)<!-- -->
+![](proj_v3_files/figure-gfm/unnamed-chunk-1-1.png)<!-- -->
 
 ``` r
 # incorrect distribution only   
@@ -990,7 +990,7 @@ df %>%
   )
 ```
 
-![](proj1_v3_files/figure-gfm/unnamed-chunk-1-2.png)<!-- -->
+![](proj_v3_files/figure-gfm/unnamed-chunk-1-2.png)<!-- -->
 
 ``` r
 # comparison plots of interval lengths and variation (sd) by sample size and lambda
@@ -1026,7 +1026,7 @@ df_all %>%
   )
 ```
 
-![](proj1_v3_files/figure-gfm/unnamed-chunk-2-1.png)<!-- -->
+![](proj_v3_files/figure-gfm/unnamed-chunk-2-1.png)<!-- -->
 
 ``` r
 # comparison plots of interval lengths and variation (sd) by methods
@@ -1057,4 +1057,4 @@ df_all %>%
   )
 ```
 
-![](proj1_v3_files/figure-gfm/unnamed-chunk-3-1.png)<!-- -->
+![](proj_v3_files/figure-gfm/unnamed-chunk-3-1.png)<!-- -->
